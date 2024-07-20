@@ -3,26 +3,54 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
+.custom-navbar-brand {
+    margin-left: 50px; /* Adjust as needed */
+}
+
+.custom-navbar-nav {
+    margin-right: 100px; /* Adjust as needed */
+}
 
 .navbar {
     margin-bottom: 0;
 }
 
+.navbar-brand img {
+    max-height: 300px;
+}
+
+
 header {
+    position: relative;
+    color: white; /* Set text color to white */
+}
+
+header .img-fluid {
+    z-index: -2;
+}
+
+header .overlay {
     background: linear-gradient(to right, #0066ff, #00ccff);
-    color: white;
+    opacity: 0.7; /* Adjust opacity as needed */
+    z-index: -1;
 }
 
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
 }
 
-.section-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #666;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
+
+header h1, header p {
+    color: white; /* Ensure text is white */
+}
+
+
 
 /* Services Section Styles */
 .service-box {
