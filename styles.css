@@ -93,6 +93,7 @@ header h1, header p {
 }
 
 
+/* Portfolio Section Styles */
 .portfolio-box {
     position: relative;
     overflow: hidden;
@@ -117,6 +118,7 @@ header h1, header p {
 .carousel-item .row {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
 .carousel-control-prev-icon,
@@ -148,6 +150,29 @@ header h1, header p {
 .social-links .btn i {
     margin-right: 0.5rem;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .service-box {
+        margin-bottom: 1rem;
+    }
+
+    .carousel-item .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-box {
+        margin-bottom: 1rem;
+    }
+}
+
 
 
 /* Contact Us Section Styles */
