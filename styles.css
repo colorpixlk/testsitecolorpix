@@ -1,8 +1,10 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins bold', sans-serif;
     line-height: 1.6;
 }
+
+
 .custom-navbar-brand {
     margin-left: 50px; /* Adjust as needed */
 }
@@ -30,10 +32,10 @@ header .img-fluid {
 }
 
 header .overlay {
-    background: linear-gradient(to right, #0066ff, #00ccff);
-    opacity: 0.7; /* Adjust opacity as needed */
+    background-color: rgba(24, 81, 214, 0.9); /* Solid color overlay with 90% opacity */
     z-index: -1;
 }
+
 
 .fade-in-text {
     opacity: 0;
@@ -223,6 +225,37 @@ header h1, header p {
     transform: translateY(-3px);
 }
 
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; /* WhatsApp green */
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .whatsapp-button a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .whatsapp-button img {
+    width: 30px; /* WhatsApp icon size */
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .whatsapp-button span {
+    font-size: 16px;
+  }
 
 .footer {
     padding: 40px 0;
