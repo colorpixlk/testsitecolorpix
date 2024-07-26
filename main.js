@@ -18,3 +18,10 @@ $('#portfolioCarousel').on('touchstart', function(event) {
         $(this).off('touchmove');
     });
 });
+
+// JavaScript to handle additional functionality (optional)
+document.querySelector('.whatsapp-button').addEventListener('click', function() {
+    // Add any additional functionality here
+    console.log('WhatsApp button clicked!');
+});
+
