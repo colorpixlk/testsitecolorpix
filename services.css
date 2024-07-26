@@ -1,11 +1,21 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
+.custom-navbar-brand {
+    margin-left: 50px; /* Adjust as needed */
+}
+
+.custom-navbar-nav {
+    margin-right: 100px; /* Adjust as needed */
+}
 
 .navbar {
     margin-bottom: 0;
+}
+
+.navbar-brand img {
+    max-height: 300px;
 }
 
 header {
