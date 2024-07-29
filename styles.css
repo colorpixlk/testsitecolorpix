@@ -23,18 +23,50 @@ body {
 
 
 header {
-    position: relative;
-    color: white; /* Set text color to white */
+    min-height: 100vh;
+    height: auto;
 }
 
-header .img-fluid {
-    z-index: -2;
+header h1.display-4 {
+    font-size: 5rem !important;
+    color: #fff;
 }
 
-header .overlay {
-    background-color: rgba(24, 81, 214, 0.9); /* Solid color overlay with 90% opacity */
-    z-index: -1;
+header p.lead {
+    font-size: 1.8rem; /* Adjusted larger font size for the lead paragraph */
+    color: #fff;
 }
+
+
+.custom-btn {
+    background-color: white;
+    color: #1851d6;
+    border: 2px solid #1851d6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #1851d6;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        min-height: auto; /* Adjust height for smaller screens */
+    }
+    header h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+    header p.lead {
+        font-size: 1.1rem; /* Adjusted font size for mobile */
+    }
+    .custom-btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem; /* Adjust button size and padding for mobile */
+    }
+}
+
+
 
 
 .fade-in-text {
@@ -48,21 +80,6 @@ header .overlay {
     }
 }
 
-header h1, header p {
-    color: white; /* Ensure text is white */
-}
-
-.custom-btn {
-    background-color: white;
-    color: #1851d6;
-    border: 2px solid #1851d6;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.custom-btn:hover {
-    background-color: #1851d6;
-    color: white;
-}
 
 
 /* Services Section Styles */
